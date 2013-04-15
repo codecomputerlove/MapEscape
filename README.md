@@ -1,4 +1,4 @@
 MapEscape
 =========
 
-jQuery / Zepto plugin for maps
+jQuery / Zepto plugin for maps.
