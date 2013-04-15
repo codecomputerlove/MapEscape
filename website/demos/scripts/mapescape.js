@@ -35,7 +35,11 @@
           this.mapControls = 0; 
           this.$scrollHelper.css({'top': '0'});
         }
-        this.mapHeight = ($el.outerHeight() - parseInt(this.mapControls));
+        var h = $el.height();
+        if(!typeof Zepto === 'undefined'){
+          h = $el.outerHeight();
+        }
+        this.mapHeight = (h - parseInt(this.mapControls));
         this.$scrollHelper.height(this.mapHeight);
 
          this.$scrollHelper.on('touchstart mousedown', $.proxy(this, 'touchstartHandler'));
@@ -46,7 +50,10 @@
         this.toggleScrollHelperOn();
       },
       positionScrollTab: function(){
-        this.tabHeight = this.$scrollHelperTab.outerHeight();
+        this.tabHeight = this.$scrollHelperTab.height();
+        if(!typeof Zepto === 'undefined'){
+          this.tabHeight = this.$scrollHelperTab.outerHeight();
+        }
         this.pos = (this.mapHeight/2) - (this.tabHeight/2);
         this.$scrollHelperTab.css({
           'top': this.pos + 'px'
@@ -97,7 +104,11 @@
         this.checkMapVsWindow();
 
         var mapBottom = ($el.offset().top + (this.mapHeight + parseInt(this.mapControls))) + settings.threshhold;
-        if(mapBottom > $(window).innerHeight()){
+        var h = $(window).height();
+        if(!typeof Zepto === 'undefined'){
+          h = $(window).innerHeight();
+        }
+        if(mapBottom > h){
           this.showScrollHelper();
         }else{
           this.removeScrollHelper(); 
