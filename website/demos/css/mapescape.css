@@ -1,0 +1,19 @@
+/* default */
+
+.map { top: 0px; left: 0; width: 100%; height: 350px;}
+.map-wrapper { position: relative; overflow: hidden; }
+/* top is set to 30px to allow for google maps controls. set to 0 if not using google maps */
+.mapescape-scroll { background: transparent; z-index: 1; width: 40px; right: 0; top: 30px; position: absolute; 
+  transition:right .3s;
+  -moz-transition:right .3s; /* Firefox 4 */
+  -webkit-transition:right .3s; /* Safari and Chrome */
+}
+.mapescape-scroll.scroll-inactive { right: -40px; }
+.mapescape-scroll-tab { width: 35px; height: 70px; right: 0; border-radius: 55px 0 0 55px; position: absolute; background: rgba(174,38,66,.7) url(../images/scroll-icon.png) 70% 50% no-repeat; color: #fff; background-size: 12px 25px;
+  transition:top .3s;
+  -moz-transition:top .3s; /* Firefox 4 */
+  -webkit-transition:top .3s; /* Safari and Chrome */
+}
+
+/* finger skin */
+.finger .mapescape-scroll-tab { }
