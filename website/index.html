@@ -1,0 +1,158 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>MapEscape</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="_client/styles/fonts.css">
+	<link rel="stylesheet" href="_client/styles/screen.css">
+	<link rel="stylesheet" href="_client/styles/tablet.css" media="screen and (min-width: 768px)">
+	<link rel="stylesheet" href="_client/styles/desktop.css" media="screen and (min-width:980px)">
+	<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+<body class="homepage">
+
+	<div id="Container" class="container">
+		<div class="top-bar clearfix">
+			<div class="code"><a href="http://www.codecomputerlove.com"><img src="_client/images/code-logo.png" alt="visit Code Computerlove" /></a></div>
+			<div class="follow">
+				<a href="https://twitter.com/computerlovers" class="t ss-icon ss-social">twitter</a>
+				<a href="https://en-gb.facebook.com/CodeComputerlove" class="f ss-icon ss-social">facebook</a>
+				<a href="#" class="g ss-icon ss-social">googleplus</a>
+			</div>
+		</div>
+		<div class="header">
+			<header>
+				<a href="/" class="logo"><img src="_client/images/logo@x2.png" alt="MapEscape helping you navigate out of a map" /></a>
+			</header>
+			<p>For those anoying times when you rotate your device and get stuck in a map</p>
+			<p><a href="demos/">View the live demo now</a></p>
+		</div>
+		<div id="Main" role="main" class="main clearfix">
+			<section>
+				<article>
+					<header><h1><a href="demos/"><img src="_client/images/map-escape.jpg" alt="MapEscape helping you navigate out of a map" /></a></h1></header>
+					<div class="downloads">
+						<a href="#" class="btn"><span class="ss-icon ss-symbolicons-block">downloadbox</span>Download</a>
+						<a href="#" class="btn"><span class="ss-icon ss-social">&#xF671;</span>Fork on Github</a>
+					</div>
+					<p>We've all been there. You build an interactive map as part of your web solution. Your map looks and interacts like a charm in portrait mode on your smartphone and tablet.  Now you rotate your device for a closer look at the map. Suddenly you're suck in the map and all swiping just interacts directly with the map. You can't scroll to any other content.</p>
+					<p>Introducing MapEscape, a small plugin that detects if your map is obscuring the entire screen and introduces a scrollable area so you can scroll your way through your webpage without interacting with the map.</p>
+					<p>MapEscape is written to work with both jQuery and Zepto whatever your preference. at less than 1k minified the pluginis lightweight and completely customisable.</p>
+				</article>
+				<article>
+					<h2>Usage</h2>
+					<div class="code-snippet">
+						<h3>HTML</h3>
+						<pre class="prettyprint lang-html">&lt;div class="map">your map code here&lt;/div></pre>
+					</div>
+					<div class="code-snippet">
+						<h3>Javascript</h3>
+						<pre class="prettyprint">&lt;!-- The same code is valid for both jQuery and Zepto --&gt;<br /><br />&lt;script type="text/javascript"><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;$('.map').mapescape();<br /><br />&lt;/script></pre>
+					</div>
+				</article>
+
+				<article>
+					<h2>Options</h2>
+					<p>Options are kept to a minimum as it has little functionality, however a lot can be acheived via styling through CSS</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Option</th>
+								<th>Type</th>
+								<th>Default</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>alwaysOn</td>
+								<td>Boolean</td>
+								<td>false</td>
+								<td>if false map height is measured against window height - true always shows scoll area</td>
+							</tr>
+							<tr>
+								<td>hiddenClass</td>
+								<td>String</td>
+								<td>scroll-inactive</td>
+								<td>CSS class to hide the control</td>
+							</tr>
+							<tr>
+								<td>scrollText</td>
+								<td>String</td>
+								<td>null</td>
+								<td>text in scroll indicator - leave blank for none</td>
+							</tr>
+							<tr>
+								<td>threshhold</td>
+								<td>Integer</td>
+								<td>100</td>
+								<td>Amount of viewable scroll area below the map before control is shown</td>
+							</tr>
+							<tr>
+								<td>tabCenter</td>
+								<td>Boolean</td>
+								<td>true</td>
+								<td>Position the scroll indicator with JS - false to position with CSS</td>
+							</tr>
+							<tr>
+								<td>scrollFollow</td>
+								<td>Boolean</td>
+								<td>true</td>
+								<td>set to false for static scroll tab</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- AddThis Button BEGIN -->
+					<div class="social-share">
+						<div class="t sb">
+							<div class="btn"><span class="ss-icon ss-social">twitter</span>Tweet</div>
+							<div class="atb addthis_toolbox addthis_default_style ">
+								<a class="addthis_button_tweet"></a>
+							</div>
+						</div>
+						<div class="f sb">
+							<div class="btn"><span class="ss-icon ss-social">facebook</span>Share</div>
+							<div class="atb addthis_toolbox addthis_default_style ">
+								<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+							</div>
+						</div>
+						<div class="g sb">
+							<div class="btn"><span class="ss-icon ss-social">googleplus</span>Share</div>
+							<div class="atb addthis_toolbox addthis_default_style ">
+								<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-516a78053fc1b464"></script>
+					<!-- AddThis Button END -->
+				</article>
+			</section>
+		</div>
+		
+		<footer class="clearfix">
+			<div class="footer-container">
+				
+				<p>&copy; MapEscape, all rights reserved.</p>
+				<nav class="downloads">
+					<a href="#">Download</a>
+					<a href="#">Fork on Github</a>
+				</nav>
+
+			</div>
+		</footer>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="demos/scripts/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="_client/scripts/core.js"></script>
+</body>
+</html>

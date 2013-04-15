@@ -1,0 +1,30 @@
+.header, .main, .footer-container, .map-demo p { width: 80%; margin: 0 10%; }
+table td,
+table th { font-size: 14px; }
+.code-snippet h3 { padding: 20px 12px; }
+footer p { width: 45%; float: left; margin: 0; }
+footer nav { margin: 0; padding: 0; float: right; width: 45%; text-align: right; }
+footer nav a { margin-left: 20px; }
+
+.btn { width: auto; }
+.buttons { text-align: center; width: 100%; }
+
+.social-share { height: auto; }
+.social-share .atb { top: 20px; left: 30%; }
+.social-share .btn { width: 100%; position: relative; z-index: 2; margin: 0; display: block; cursor: pointer;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transition:all .3s;
+  -moz-transition:all .3s; /* Firefox 4 */
+  -webkit-transition:all .3s; /* Safari and Chrome */
+ }
+
+.social-share .sb:hover .btn,
+.social-share .sb.hover .btn  { margin-left: -100%; }
+.social-share .btn .ss-icon { background: transparent; box-shadow: none; font-size: 40px; top: 0; }
+.social-share .t .btn { background: #00aced; border-radius: 2px 0 0 2px; border-right: 0; }
+.social-share .f .btn { background: #3b5998; border-left: 0; border-right: 0; border-radius: 0; }
+.social-share .g .btn { background: #e4e4e4; color: #da573b; border-radius: 0 2px 2px 0; border-left: 0; }
+
+.social-share.no-box  { display: none; }
