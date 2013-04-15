@@ -12,7 +12,13 @@ This scrollable area then allows you to scroll out of the map and reach the rest
 4. Compatable with both jQuery and Zepto
 
 IMPLEMENTATION
-
+-----------------
 $('.map').mapescape();
+
+FILES
+-----------------
+demos/scripts/mapescape.min.js
+demos/css/mapescape.css
+demos/images/scroll-icon.png
 
 
