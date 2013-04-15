@@ -9,6 +9,7 @@
       mapWrapperCssClass: 'map-wrapper',
       scrollAreaCssClass: 'mapescape-scroll',
       scrollTabCssClass: 'mapescape-scroll-tab',
+       helperCSSClass: 'scroll-active',
 
       init: function(){
         this.initScrollHelper();
@@ -36,6 +37,9 @@
         }
         this.mapHeight = ($el.outerHeight() - parseInt(this.mapControls));
         this.$scrollHelper.height(this.mapHeight);
+
+         this.$scrollHelper.on('touchstart mousedown', $.proxy(this, 'touchstartHandler'));
+        this.$scrollHelper.on('touchend mouseup', $.proxy(this, 'touchendHandler'));
 
         if(settings.tabCenter){this.positionScrollTab();}
 
@@ -104,6 +108,14 @@
       },
       showScrollHelper: function(){
         this.$scrollHelper.removeClass(settings.hiddenClass);
+      },
+
+      touchstartHandler: function(e){
+        $(e.currentTarget).addClass(this.helperCSSClass);
+      },
+
+      touchendHandler: function(e){
+        $(e.currentTarget).removeClass(this.helperCSSClass);
       }
 
     });
