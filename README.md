@@ -18,7 +18,9 @@ $('.map').mapescape();
 FILES
 -----------------
 demos/scripts/mapescape.min.js
+
 demos/css/mapescape.css
+
 demos/images/scroll-icon.png
 
 
