@@ -1,10 +1,6 @@
 .header, .main, .footer-container, .map-demo p { width: 720px; margin: 0 auto; }
-
-.downloads { display: block; text-align: center; }
-.downloads .btn { border: 0; background: transparent; color: #686868; }
-.downloads .btn:hover { color: #ae2642;}
-.downloads .btn span { background: transparent; box-shadow: none; }
-
+footer .downloads { display: block; text-align: right; }
+.dload { display: inline-block; }
 .social-share.no-box { text-align: center; display: block; margin-bottom: 20px; height: 20px; margin-top: 20px; }
 .social-share.no-box .sb { width: 17%; }
 .social-share.no-box .btn { display: none; }
