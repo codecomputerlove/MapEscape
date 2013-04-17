@@ -1,24 +1,12 @@
 {
   "name": "MapEscape",
+  "version": "1.0.1",
   "title": "MapEscape",
-  "version": "1",
-  "description": "jQuery / Zepto plugin for maps. Adds a scrollable area to maps when map obscures the entire device screen, to allow users to reach the rest of the page content",
-  "url": "http://labs.codecomputerlove.com/MapEscape/",
-  "keywords": [ "maps", "scrollable", "mobile", "Zepto", "jquery" ],
   "author": {
     "name": "Andrew Brandwood",
     "email": "andrew.brandwood@codecomputerlove.com",
     "url": "http://www.codecomputerlove.com/"
   },
-  "homepage": "http://labs.codecomputerlove.com/MapEscape/",
-  "docs": "http://labs.codecomputerlove.com/MapEscape/",
-  "demo": "http://labs.codecomputerlove.com/MapEscape/demos/",
-  "download": "https://github.com/codecomputerlove/MapEscape/archive/master.zip",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codecomputerlove/MapEscape.git"
-  },
-  "dependencies": { "jquery": ">=1.7.1" },
   "licenses": [
      {
          "type": "MIT",
@@ -28,5 +16,17 @@
          "type": "GPLv2",
          "url": "http://appendto.com/open-source-licenses"
      }
-  ]
+  ],
+  "dependencies": { "jquery": ">=1.7.1" },
+  "description": "jQuery / Zepto plugin for maps. Adds a scrollable area to maps when map obscures the entire device screen, to allow users to reach the rest of the page content",
+  "keywords": [ "maps", "scrollable", "mobile", "Zepto", "jquery" ],
+  "homepage": "http://labs.codecomputerlove.com/MapEscape/",
+  "docs": "http://labs.codecomputerlove.com/MapEscape/",
+  "demo": "http://labs.codecomputerlove.com/MapEscape/demos/",
+  "download": "https://github.com/codecomputerlove/MapEscape/archive/master.zip",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codecomputerlove/MapEscape.git"
+  }
+  
 }
