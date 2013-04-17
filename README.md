@@ -14,24 +14,23 @@ This scrollable area then allows you to scroll out of the map and reach the rest
 IMPLEMENTATION
 -----------------
 
-//simple initialise mapescape
+	//simple initialise mapescape
+	$(document).ready(function(){
 
-$(document).ready(function(){
+		$('.map').mapescape();
 
-	$('.map').mapescape();
-
-});
+	});
 
 
 OPTIONS
 ---------
 
-- alwaysOn			| Boolean |	if false map height is measured against window height - true always shows scoll area
-- hiddenClass		|	String	|	CSS class to hide the control
-- scrollText		|	String	| text in scroll indicator - leave blank for none
-- threshhold		|	Integer	| Amount of viewable scroll area below the map before control is shown
-- tabCenter			|	Boolean	| Position the scroll indicator with JS - false to position with CSS
-- scrollFollow	|	Boolean	|	set to false for static scroll tab
+	- alwaysOn		| Boolean |	if false map height is measured against window height - true always shows scoll area
+	- hiddenClass		| String  |	CSS class to hide the control
+	- scrollText		| String  | 	text in scroll indicator - leave blank for none
+	- threshhold		| Integer | 	Amount of viewable scroll area below the map before control is shown
+	- tabCenter		| Boolean |	Position the scroll indicator with JS - false to position with CSS
+	- scrollFollow		| Boolean |	set to false for static scroll tab
 
 
 FILES
