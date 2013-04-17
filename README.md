@@ -15,8 +15,11 @@ IMPLEMENTATION
 -----------------
 
 //simple initialise mapescape
+
 $(document).ready(function(){
+
 	$('.map').mapescape();
+
 });
 
 
