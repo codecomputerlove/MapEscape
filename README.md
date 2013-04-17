@@ -11,6 +11,11 @@ This scrollable area then allows you to scroll out of the map and reach the rest
 3. Less than 1k minified
 4. Compatable with both jQuery and Zepto
 
+DEMOS
+----------
+http://labs.codecomputerlove.com/MapEscape/
+
+
 IMPLEMENTATION
 -----------------
 
